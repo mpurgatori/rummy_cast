@@ -1,0 +1,17 @@
+{
+  "name": "teach",
+  "description": "React Teaching Application",
+  "main": "index.js",
+  "authors": [
+    "Mike Purgatori <mpurgatori@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mpurgatori/teach",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
