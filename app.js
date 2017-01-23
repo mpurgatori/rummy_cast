@@ -1,8 +1,5 @@
-let express = require('express');
-let morgan = require('morgan');
-let session = require('express-session');
-let cookieParser = require('cookie-parser');
-let db = require('./models/_db');
+var express = require('express');
+
 
 const app = express();
 const path = require('path');
@@ -16,15 +13,6 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(morgan('default'));
-app.use(cookieParser());
-
-app.use(session({
-  secret:'rummy dog',
-  cookie: {
-    maxAge: 1000000
-  }
-}));
 
 app.use('/api', apiRouter);
 
