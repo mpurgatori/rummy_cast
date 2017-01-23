@@ -1,9 +1,9 @@
-let express = require('express');
+var express = require('express');
 const router = express.Router();
 
 
-let userRoute = require('./routes/userRoute');
-let weatherRoute = require('./routes/weatherRoute');
+var userRoute = require('./routes/userRoute');
+var weatherRoute = require('./routes/weatherRoute');
 
 
 router.use('/user', userRoute);

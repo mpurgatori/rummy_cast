@@ -6,9 +6,9 @@ const path = require('path');
 const rootPath = path.join(__dirname);
 
 
-let apiRouter = require('./api');
+var apiRouter = require('./api');
 
-let bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
