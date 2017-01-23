@@ -1,11 +1,12 @@
 {
+  "repository": "https://github.com/mpurgatori/rummy_cast.git",
   "name": "rummy_cast",
   "version": "1.0.0",
   "description": "Chrome Extension",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -w & nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,8 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
+    "forecast": "^0.3.2",
+    "geolocation": "^0.2.0",
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
     "pg": "^6.1.2",
@@ -34,7 +37,10 @@
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.1.0",
     "sequelize": "^3.27.0",
-    "session": "^0.1.0",
-    "webpack": "^1.14.0"
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-google": "^0.7.1"
   }
 }

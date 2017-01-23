@@ -2,7 +2,7 @@ let express = require('express');
 let morgan = require('morgan');
 let session = require('express-session');
 let cookieParser = require('cookie-parser');
-let db = require('./models/index');
+let db = require('./models/_db');
 
 const app = express();
 const path = require('path');
@@ -32,7 +32,7 @@ app.use(express.static('public'))
 
 app.get('*', function (req, res, next) {
   //console.log('THIS IS REQ SESSION',req.session);
-  res.sendFile(rootPath+'/browser/index.html')
+  res.sendFile(rootPath+'/index.html')
 });
 
 app.use(function (err, req, res, next) {

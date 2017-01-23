@@ -1,0 +1,58 @@
+html{
+	/* This image will be displayed fullscreen */
+	background:url('/assets/cliffs.jpg') no-repeat center center;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+
+	/* The Magic */
+	background-size:cover;
+}
+
+body{
+	/* Workaround for some mobile browsers */
+	min-height:100%;
+	background: transparent;
+}
+
+i{
+	display: inline-block;
+}
+
+
+
+#nameInput {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+		width:100%;
+    background:#42adf4;
+}
+
+#writeName {
+	color:white;
+}
+
+
+.hidden{
+	display:none;
+}
+
+
+.wi{
+	font-size: 6em;
+	color:white;
+}
+
+h1{
+	color:white;
+}
+
+h2{
+	color:white;
+}
+
+#temp{
+	font-size:6em;
+}
