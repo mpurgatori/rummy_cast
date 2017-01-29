@@ -22,13 +22,15 @@ i{
 
 
 #nameInput {
+		background:url('/assets/cliffs.jpg') no-repeat center center;
+		background-size:100%;
     position:absolute;
     top:0;
     left:0;
     bottom:0;
 		width:100%;
-    background:#42adf4;
 }
+
 
 #writeName {
 	color:white;
@@ -47,12 +49,59 @@ i{
 
 h1{
 	color:white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 6em;
+
 }
 
 h2{
+	font-size: 3em;
 	color:white;
+	font-family: 'Indie Flower', cursive;
 }
 
 #temp{
-	font-size:6em;
+	font-size:4em;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+#rightSide{
+	margin-right: 5%;
+	float:right;
+}
+
+#leftSide{
+	margin-left: 5%;
+}
+
+.change_name{
+	position: fixed;
+  bottom: 0;
+	left:0;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+#inputName{
+		font-size: 60px;
+		font-family: 'Indie Flower', cursive;
+    background-color:rgba(0, 0, 0, 0);
+    color:white;
+    border: none;
+    outline:none;
+    height:65px;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+}
+
+.enter_link{
+	font-size: 3em;
+	color:white;
+	font-family: 'Indie Flower', cursive;
+}
+
+#google{
+	display:block;
+	margin-left: 5%;
 }

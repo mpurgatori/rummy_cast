@@ -11,6 +11,7 @@
 
     <title>Chrome Ext</title>
 
+    <link rel="shortcut icon" href="/rummy_fav.ico" type="image/x-icon">
     <!-- jQuery -->
     <script src="jquery.js"></script>
 
@@ -27,29 +28,48 @@
 
     <!-- Custom CSS -->
     <link href="/css/custom.css" rel="stylesheet">
+      <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
 
 </head>
 
 <body>
   <div class="col-xs-2" id="nameInput">
-    <h2 id="writeName">What's your name?</h2>
-      <form class="form-group" id="name" name="form1">
-        <input id="inputName" class="form-control"type="text" name="firstName">
-      </form>
-    <a href="#" class="enter_link">Submit</a>
+      <h2 id="writeName">What's your name?</h2>
+        <form class="form-group" id="name" name="form1">
+          <input id="inputName" class="form-control"type="text" name="firstName">
+        </form>
+      <a href="#" class="enter_link">go!</a>
   </div>
 
-  <div id="centerme">
-    <h1 style="display:inline-block" id="loadGreet">Good Morning</h1>
-    <h1 style="display:inline-block" id="loadName">Mike.</h1>
+  <div id="leftSide" style="display:inline-block">
+      <h1 style="display:inline-block" id="loadGreet">Good Morning</h1>
+      <h1 style="display:inline-block">, </h1>
+      <h1 style="display:inline-block" id="loadName">Mike.</h1>
+  </div>
+  <div id="rightSide">
     <h1 id="clock"></h1>
-
     <i class="wi"></i>
     <h2 id="temp"><h2>
-
-    <a href="/" class="change_name">Change Name</a>
   </div>
+
+<div id="google">
+  <form method="get" target="_blank" action="http://www.google.com/search">
+    <div style="padding:4px;width:15em;">
+    <table border="0" align="center" cellpadding="0">
+    <tr><td>
+    <input class="form-control" type="text"   name="q" size="25" style="color:#808080;"
+    maxlength="255" value="Google search"
+    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+    <input class="btn btn-info" type="submit" value="Go!" />
+    </table>
+    </div>
+  </form>
+</div>
+
+    <a href="/" class="change_name">change name</a>
+
 
 
 

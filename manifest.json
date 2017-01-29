@@ -1,0 +1,8 @@
+{
+  "name": "Rummy Cast",
+  "version": "1.0",
+  "description": "You're one stop Rummy shop.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
